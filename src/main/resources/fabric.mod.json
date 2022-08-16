@@ -1,29 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "superstestmod",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Super's Test Mod",
+  "description": "Testing mod",
   "authors": [
-    "Me!"
+    "SuperPro148"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "no actual homepage",
+    "sources": "https://github.com/SuperPro148/supers-test-mod"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/superstestmod/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.supers.test.mod.SupersTestMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {

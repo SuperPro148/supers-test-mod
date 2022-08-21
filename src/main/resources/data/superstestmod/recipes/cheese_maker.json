@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "IGI",
+        "IBI",
+        "STS"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "G": {
+            "item": "minecraft:glass_pane"
+        },
+        "B": {
+            "item": "minecraft:bucket"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "T": {
+            "item": "minecraft:torch"
+        }
+    },
+    "result": {
+        "item": "superstestmod:cheese_maker",
+        "count": 1
+    }
+}

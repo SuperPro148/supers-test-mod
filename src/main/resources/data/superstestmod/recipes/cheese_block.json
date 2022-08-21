@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "CC",
+        "CC"
+    ],
+    "key": {
+        "C": {
+            "item": "superstestmod:cheese"
+        }
+    },
+    "result": {
+        "item": "superstestmod:cheese_block",
+        "count": 1
+    }
+}

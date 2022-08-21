@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "superstestmod:block/cheese_block"
+        }
+    }
+}

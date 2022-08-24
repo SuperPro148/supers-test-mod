@@ -9,7 +9,7 @@
     "SuperPro148"
   ],
   "contact": {
-    "homepage": "no actual homepage",
+    "homepage": "https://github.com/SuperPro148/supers-test-mod",
     "sources": "https://github.com/SuperPro148/supers-test-mod"
   },
 
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.supers.test.mod.SupersTestMod"
+      "supers.test.mod.SupersTestMod"
     ]
   },
   "mixins": [

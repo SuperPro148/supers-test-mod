@@ -1,4 +1,4 @@
-package net.supers.test.mod;
+package supers.test.mod;
 
 import java.util.Set;
 

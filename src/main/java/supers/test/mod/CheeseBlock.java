@@ -1,7 +1,4 @@
-package net.supers.test.mod;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+package supers.test.mod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -10,8 +7,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class CheeseBlock extends Block {
-
-    public static final Logger LOGGER = LoggerFactory.getLogger("superstestmod");
 
     public CheeseBlock(Settings settings) {
         super(settings);

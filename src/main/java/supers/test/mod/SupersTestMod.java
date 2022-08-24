@@ -1,4 +1,4 @@
-package net.supers.test.mod;
+package supers.test.mod;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;

@@ -23,6 +23,7 @@
     ]
   },
   "mixins": [
+    "superstestmod.mixins.json"
   ],
 
   "depends": {

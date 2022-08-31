@@ -4,7 +4,8 @@
     "package": "supers.test.mod.mixin",
     "compatibilityLevel": "JAVA_17",
     "mixins": [
-        "ThrowableStacksMixin"
+        "ThrowableStacksMixin",
+        "ExplodingBunnyMixin"
     ],
     "client": [],
     "server": [],

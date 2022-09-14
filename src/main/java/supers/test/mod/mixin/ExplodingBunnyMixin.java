@@ -20,8 +20,7 @@ public abstract class ExplodingBunnyMixin extends Entity {
     @Inject(method = "onDeath", at = @At("TAIL"))
     private void superstestmod$makeBunniesExplode(CallbackInfo ci) {
         if (this.getType() == EntityType.RABBIT) {
-            Explosion.DestructionType destructionType = Explosion.DestructionType.DESTROY;
-            this.world.createExplosion(this, this.getX(), this.getY(), this.getZ(), 6.0f, destructionType);
+            this.world.createExplosion(this, this.getX(), this.getY(), this.getZ(), 6.0f, Explosion.DestructionType.DESTROY);
         }
     }
 }

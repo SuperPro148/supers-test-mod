@@ -13,8 +13,8 @@ public class CheeseBlock extends Block {
     }
 
     @Override
-    public void onBreak(World world, BlockPos pos, BlockState blockState, PlayerEntity playerEntity) {
-        playerEntity.getHungerManager().add(20, 10f);
-        super.onBreak(world, pos, blockState, playerEntity);
+    public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        player.getHungerManager().add(20, 10f);
+        super.onBreak(world, pos, state, player);
     }
 }

@@ -21,6 +21,7 @@ public class SupersTestMod implements ModInitializer {
     public static final Item CHEESE_MAKER = new CheeseMaker(new FabricItemSettings().group(ItemGroup.TOOLS).maxCount(1));
     public static final Item CHEESE = new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(4).saturationModifier(6).build()));
     public static final Block CHEESE_BLOCK = new CheeseBlock(FabricBlockSettings.copyOf(Blocks.DIRT));
+    public static final Item LEMON = new LemonItem(new FabricItemSettings().group(ItemGroup.MISC).maxCount(69));
 
 	@Override
 	public void onInitialize() {
@@ -29,6 +30,7 @@ public class SupersTestMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("superstestmod", "cheese"), CHEESE);
         Registry.register(Registry.ITEM, new Identifier("superstestmod", "cheese_block"), new BlockItem(CHEESE_BLOCK, new FabricItemSettings().group(ItemGroup.FOOD)));
         Registry.register(Registry.BLOCK, new Identifier("superstestmod", "cheese_block"), CHEESE_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier("superstestmod", "lemon"), LEMON);
 
     }
 }

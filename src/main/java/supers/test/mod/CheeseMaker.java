@@ -17,17 +17,17 @@ public class CheeseMaker extends Item {
     }
 
     @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
 
-        if (playerEntity.getInventory().containsAny(Set.of(Items.MILK_BUCKET))) {
+        if (player.getInventory().containsAny(Set.of(Items.MILK_BUCKET))) {
             
-            int slot = playerEntity.getInventory().getSlotWithStack(new ItemStack(Items.MILK_BUCKET));
-            playerEntity.getInventory().setStack(slot, new ItemStack(Items.BUCKET));
-            playerEntity.getInventory().insertStack(new ItemStack(SupersTestMod.CHEESE));
+            int slot = player.getInventory().getSlotWithStack(new ItemStack(Items.MILK_BUCKET));
+            player.getInventory().setStack(slot, new ItemStack(Items.BUCKET));
+            player.getInventory().insertStack(new ItemStack(SupersTestMod.CHEESE));
 
         }
         
-    return TypedActionResult.success(playerEntity.getStackInHand(hand));
+    return TypedActionResult.success(player.getStackInHand(hand));
 
     }
 

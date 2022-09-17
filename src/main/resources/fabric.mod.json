@@ -18,6 +18,9 @@
 
   "environment": "*",
   "entrypoints": {
+    "client": [
+      "supers.test.mod.SupersTestModClient"  
+    ],
     "main": [
       "supers.test.mod.SupersTestMod"
     ]

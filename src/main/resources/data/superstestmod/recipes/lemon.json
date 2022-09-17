@@ -1,16 +1,13 @@
 {
-    "type": "minecraft:crafting_unshaped",
-    "pattern": [
-        "AD"
-    ],
-    "key": {
-        "A": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
             "item": "minecraft:apple"
         },
-        "D": {
+        {
             "item": "minecraft:yellow_dye"
         }
-    },
+    ],
     "result": {
         "item": "superstestmod:lemon",
         "count": 1

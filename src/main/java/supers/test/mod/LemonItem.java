@@ -19,13 +19,14 @@ public class LemonItem extends Item {
     
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
 
+        ItemStack itemStack = player.getStackInHand(hand);
         player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 1, 5));
         ItemEntity explodingEntity = new ItemEntity(world, player.getX(), player.getY() - 1, player.getZ(), new ItemStack(SupersTestMod.LEMON));
         world.spawnEntity(explodingEntity);
         world.createExplosion(explodingEntity, explodingEntity.getX(), explodingEntity.getY(), explodingEntity.getZ(), 6.0f, Explosion.DestructionType.DESTROY);
         explodingEntity.discard();
-        player.getStackInHand(hand).setCount(player.getStackInHand(hand).getCount() - 1);
+        itemStack.decrement(1);
 
-        return TypedActionResult.success(player.getStackInHand(hand));
+        return TypedActionResult.success(itemStack);
     }
 }

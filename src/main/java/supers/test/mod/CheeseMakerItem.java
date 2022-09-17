@@ -10,9 +10,9 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class CheeseMaker extends Item {
+public class CheeseMakerItem extends Item {
 
-    public CheeseMaker(Settings settings) {
+    public CheeseMakerItem(Settings settings) {
         super(settings);
     }
 

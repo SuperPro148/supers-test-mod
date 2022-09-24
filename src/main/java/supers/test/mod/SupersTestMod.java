@@ -30,8 +30,6 @@ public class SupersTestMod implements ModInitializer {
     public static final Item DYNAMITE = new DynamiteItem(new FabricItemSettings().group(ItemGroup.MISC).maxCount(69));
     public static final EntityType<DynamiteEntity> DYNAMITE_ENTITY_TYPE = Registry.register(Registry.ENTITY_TYPE, new Identifier("superstestmod", "dynamite_entity"), FabricEntityTypeBuilder.<DynamiteEntity>create(SpawnGroup.MISC, DynamiteEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackRangeBlocks(4).trackedUpdateRate(10).build());
 
-    public static final Identifier PACKET_ID = new Identifier("superstestmod", "spawn_packet");
-
 	@Override
 	public void onInitialize() {
 

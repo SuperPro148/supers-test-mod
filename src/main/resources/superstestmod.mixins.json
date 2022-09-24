@@ -8,6 +8,7 @@
         "StackMaxCountMixin"
     ],
     "client": [
+        "ShowRotationMixin"
     ],
     "server": [
         "ExplodingBunnyMixin"

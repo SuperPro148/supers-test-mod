@@ -22,7 +22,8 @@ public class ShowRotationMixin {
     private void superstestmod$renderRotation(MatrixStack matrices, float tickDelta, CallbackInfo ci) {
         if (!this.client.options.debugEnabled) {
             float yaw = this.client.player.getHeadYaw();
-            float pitch = this.client.player.getPitch();
+            float rawPitch = this.client.player.getPitch();
+            float pitch = rawPitch - (float) Math.floor(rawPitch / 360) * 360 - 180;
             Text text = Text.translatable(String.format("%.3f %.3f", yaw, pitch));
             this.client.textRenderer.draw(matrices, text, 2, 22, 0xffffffff);
         }

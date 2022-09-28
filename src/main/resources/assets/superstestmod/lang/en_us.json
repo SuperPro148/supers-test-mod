@@ -2,5 +2,7 @@
     "item.superstestmod.cheese": "Cheese",
     "block.superstestmod.cheese_block": "Cheese Block",
     "item.superstestmod.cheese_maker": "Cheese Maker",
-    "item.superstestmod.lemon": "Lemon"
+    "item.superstestmod.lemon": "Lemon",
+    "key.superstestmod.align_rotation": "Align Rotation",
+    "category.superstestmod.superstestmod": "Super's Test Mod"
 }

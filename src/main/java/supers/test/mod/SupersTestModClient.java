@@ -23,7 +23,7 @@ public class SupersTestModClient implements ClientModInitializer{
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (alignRotation.wasPressed()) {
-                client.player.setYaw((float) (Math.floor(client.player.getYaw()) / 90 * 90));
+                client.player.setYaw((float) (Math.floor(client.player.getYaw() / 90) * 90));
             }
         });
         EntityRendererRegistry.register(SupersTestMod.DYNAMITE_ENTITY_TYPE, FlyingItemEntityRenderer::new);
